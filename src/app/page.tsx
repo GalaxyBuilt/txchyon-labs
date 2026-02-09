@@ -67,7 +67,7 @@ export default function LabsPage() {
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Proprietary market identification and execution models powered by the txchyon data engine. Integrated architecture for the modern institutional trader.
+            Proprietary market identification and execution models powered by the Txchyon data engine. Integrated architecture for the modern institutional trader.
           </p>
         </div>
 
@@ -205,7 +205,7 @@ export default function LabsPage() {
 
               <h3 className="text-platinum font-semibold mb-4">Unified Infrastructure</h3>
               <p className="text-sm text-muted-foreground max-w-xl mx-auto leading-relaxed">
-                Deploying institutional grade tools under a single sovereign domain. txchyon.com/labs serves as the authoritative gateway to all proprietary trading modules.
+                Deploying institutional grade tools under a single sovereign domain. Txchyon.com/labs serves as the authoritative gateway to all proprietary trading modules.
               </p>
             </div>
           </div>
@@ -213,7 +213,7 @@ export default function LabsPage() {
 
         {/* Copyright */}
         <div className="mt-20 text-center text-[10px] font-mono text-muted-foreground/30 uppercase tracking-[0.3em]">
-          Powered by txchyon Labs Engine • All Rights Reserved
+          Powered by Txchyon Labs Engine • All Rights Reserved
         </div>
       </div>
     </div>
