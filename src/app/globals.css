@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+  --color-gold: hsl(var(--gold));
+  --color-platinum: hsl(var(--platinum));
+  --color-positive: hsl(var(--positive));
+  --color-warning: hsl(var(--warning));
+
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), monospace;
+}
+
+@layer base {
+  :root {
+    --background: 250 20% 6%;
+    --foreground: 240 10% 90%;
+
+    --card: 250 18% 9%;
+    --card-foreground: 240 10% 90%;
+
+    --popover: 250 20% 6%;
+    --popover-foreground: 240 10% 90%;
+
+    --primary: 42 50% 55%;
+    --primary-foreground: 250 20% 6%;
+
+    --secondary: 250 15% 15%;
+    --secondary-foreground: 240 10% 90%;
+
+    --muted: 250 15% 15%;
+    --muted-foreground: 240 5% 65%;
+
+    --accent: 250 15% 15%;
+    --accent-foreground: 240 10% 90%;
+
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 240 10% 90%;
+
+    --border: 250 15% 15%;
+    --input: 250 15% 15%;
+    --ring: 42 50% 55%;
+
+    --gold: 42 50% 55%;
+    --platinum: 240 10% 90%;
+    --positive: 160 50% 45%;
+    --warning: 35 80% 55%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer utilities {
+  .text-gold {
+    color: hsl(var(--gold));
+  }
+
+  .bg-gold {
+    background-color: hsl(var(--gold));
+  }
+
+  .border-gold {
+    border-color: hsl(var(--gold));
+  }
+}
