@@ -10,7 +10,8 @@ import {
   Hexagon,
   Globe,
   Database,
-  Lock
+  Lock,
+  Bitcoin
 } from "lucide-react";
 
 export default function LabsPage() {
@@ -138,6 +139,40 @@ export default function LabsPage() {
                 </div>
               </div>
             </a>
+
+            {/* Project Genesis */}
+            <div className="group relative md:col-span-2 lg:col-span-1">
+              <div className="absolute inset-0 bg-gold/5 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="relative h-full bg-card/40 border border-border/50 rounded-2xl p-8 hover:border-gold/30 hover:bg-card/60 transition-all duration-300 backdrop-blur-sm cursor-not-allowed overflow-hidden border-l-2 border-l-gold/50 opacity-80">
+                <div className="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity">
+                  <Bitcoin className="w-32 h-32 text-gold rotate-12" />
+                </div>
+
+                <div className="flex items-start justify-between mb-8">
+                  <div className="w-14 h-14 bg-gold/10 border border-gold/20 rounded-xl flex items-center justify-center">
+                    <Bitcoin className="w-7 h-7 text-gold" />
+                  </div>
+                  <div className="px-3 py-1 bg-gold/5 border border-gold/20 rounded-md">
+                    <span className="text-[10px] font-mono text-gold/80 font-bold uppercase">Treasury Engine</span>
+                  </div>
+                </div>
+
+                <h2 className="text-3xl font-bold text-platinum mb-4 tracking-tight">Project Genesis</h2>
+                <p className="text-muted-foreground mb-8 leading-relaxed">
+                  Institutional-grade Bitcoin compounding engine. Fully automated, non-custodial system designed to accumulate BTC through cyclical volatility capture and risk-managed execution.
+                </p>
+
+                <div className="flex items-center justify-between pt-8 border-t border-border/50">
+                  <div className="flex flex-col">
+                    <span className="text-[10px] font-mono text-muted-foreground uppercase tracking-widest leading-none">Status</span>
+                    <span className="text-sm font-semibold text-gold animate-pulse">In Development</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-muted-foreground/50 font-mono text-sm cursor-not-allowed">
+                    ACCESS RESTRICTED <Lock className="w-3 h-3" />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
