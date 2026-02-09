@@ -8,6 +8,8 @@ export interface Env {
     LABS_HUB_URL: string;
     OMEGA_URL: string;
     ULTIMA_URL: string;
+    CAPITAL_URL: string;
+    GENESIS_URL: string;
 }
 
 export default {
@@ -15,7 +17,17 @@ export default {
         const url = new URL(request.url);
         const path = url.pathname;
 
-        // 1. Route for Omega Labs
+        // 0. Route for Capital Assets (Astro unique assets dir)
+        if (path.startsWith('/capital-assets')) {
+            return proxyRequest(request, env.CAPITAL_URL, ''); // Don't strip prefix, Astro expects it
+        }
+
+        // 1. Route for Capital
+        if (path.startsWith('/capital')) {
+            return proxyRequest(request, env.CAPITAL_URL, '/capital');
+        }
+
+        // 2. Route for Omega Labs
         if (path.startsWith('/labs/omega')) {
             const auth = await checkAuth(request, env);
             if (!auth) return promptAuth();
@@ -29,6 +41,14 @@ export default {
             if (!auth) return promptAuth();
 
             return proxyRequest(request, env.ULTIMA_URL, '/labs/ultima');
+        }
+
+        // 3. Route for Genesis (New)
+        if (path.startsWith('/labs/genesis')) {
+            const auth = await checkAuth(request, env);
+            if (!auth) return promptAuth();
+
+            return proxyRequest(request, env.GENESIS_URL, '/labs/genesis');
         }
 
         // 3. Route for Labs Hub (The Landing Page)
@@ -66,7 +86,7 @@ function promptAuth(): Response {
     return new Response('Authentication Required', {
         status: 401,
         headers: {
-            'WWW-Authenticate': 'Basic realm="TXchyon Labs"',
+            'WWW-Authenticate': 'Basic realm="Txchyon Labs"',
         },
     });
 }
