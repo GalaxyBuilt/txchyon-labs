@@ -33,7 +33,7 @@ export default function LabsPage() {
               <Hexagon className="w-6 h-6 text-gold animate-pulse" />
             </div>
             <div className="flex flex-col">
-              <span className="text-xl font-bold tracking-tighter text-platinum">TXCHYON</span>
+              <span className="text-xl font-bold tracking-tighter text-platinum">txchyon</span>
               <span className="text-[10px] font-mono tracking-[0.2em] text-gold/80 leading-none uppercase">Labs Infrastructure</span>
             </div>
           </div>
@@ -66,7 +66,7 @@ export default function LabsPage() {
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Proprietary market identification and execution models powered by the TXchyon data engine. Integrated architecture for the modern institutional trader.
+            Proprietary market identification and execution models powered by the txchyon data engine. Integrated architecture for the modern institutional trader.
           </p>
         </div>
 
@@ -75,7 +75,7 @@ export default function LabsPage() {
           {/* Omega Labs */}
           <div className="group relative">
             <div className="absolute inset-0 bg-gold/5 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-            <div className="relative h-full bg-card/40 border border-border/50 rounded-2xl p-8 hover:border-gold/30 hover:bg-card/60 transition-all duration-300 backdrop-blur-sm cursor-pointer overflow-hidden border-l-2 border-l-gold/50">
+            <a href="/labs/omega" className="relative block h-full bg-card/40 border border-border/50 rounded-2xl p-8 hover:border-gold/30 hover:bg-card/60 transition-all duration-300 backdrop-blur-sm cursor-pointer overflow-hidden border-l-2 border-l-gold/50">
               <div className="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity">
                 <Database className="w-32 h-32 text-gold rotate-12" />
               </div>
@@ -103,13 +103,13 @@ export default function LabsPage() {
                   LAUNCH MODULE <ArrowUpRight className="w-4 h-4" />
                 </div>
               </div>
-            </div>
+            </a>
           </div>
 
           {/* Ultima Labs */}
           <div className="group relative">
             <div className="absolute inset-0 bg-gold/5 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-            <div className="relative h-full bg-card/40 border border-border/50 rounded-2xl p-8 hover:border-gold/30 hover:bg-card/60 transition-all duration-300 backdrop-blur-sm cursor-pointer overflow-hidden border-l-2 border-l-gold/50">
+            <a href="/labs/ultima" className="relative block h-full bg-card/40 border border-border/50 rounded-2xl p-8 hover:border-gold/30 hover:bg-card/60 transition-all duration-300 backdrop-blur-sm cursor-pointer overflow-hidden border-l-2 border-l-gold/50">
               <div className="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity">
                 <Target className="w-32 h-32 text-gold -rotate-12" />
               </div>
@@ -137,7 +137,7 @@ export default function LabsPage() {
                   LAUNCH MODULE <ArrowUpRight className="w-4 h-4" />
                 </div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
 
@@ -170,7 +170,7 @@ export default function LabsPage() {
 
               <h3 className="text-platinum font-semibold mb-4">Unified Infrastructure</h3>
               <p className="text-sm text-muted-foreground max-w-xl mx-auto leading-relaxed">
-                Deploying institutional grade tools under a single sovereign domain. TXchyon.com/labs serves as the authoritative gateway to all proprietary trading modules.
+                Deploying institutional grade tools under a single sovereign domain. txchyon.com/labs serves as the authoritative gateway to all proprietary trading modules.
               </p>
             </div>
           </div>
@@ -178,7 +178,7 @@ export default function LabsPage() {
 
         {/* Copyright */}
         <div className="mt-20 text-center text-[10px] font-mono text-muted-foreground/30 uppercase tracking-[0.3em]">
-          Powered by TXchyon Labs Engine • All Rights Reserved
+          Powered by txchyon Labs Engine • All Rights Reserved
         </div>
       </div>
     </div>
