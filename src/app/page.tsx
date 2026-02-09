@@ -34,7 +34,7 @@ export default function LabsPage() {
               <Hexagon className="w-6 h-6 text-gold animate-pulse" />
             </div>
             <div className="flex flex-col">
-              <span className="text-xl font-bold tracking-tighter text-platinum">txchyon</span>
+              <span className="text-xl font-bold tracking-tighter text-platinum">TXCHYON</span>
               <span className="text-[10px] font-mono tracking-[0.2em] text-gold/80 leading-none uppercase">Labs Infrastructure</span>
             </div>
           </div>
