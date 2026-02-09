@@ -13,8 +13,35 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "TXchyon Labs | Advanced Trading Intelligence",
-  description: "Institutional-grade market intelligence and execution hub.",
+  title: "Txchyon Labs | Advanced Trading Intelligence",
+  description: "Institutional-grade market intelligence and execution hub. Powered by the Txchyon data engine.",
+  metadataBase: new URL("https://txchyon.com"),
+  alternates: {
+    canonical: "/labs",
+  },
+  openGraph: {
+    title: "Txchyon Labs | Advanced Trading Intelligence",
+    description: "Institutional-grade market intelligence and execution hub.",
+    url: "/labs",
+    siteName: "Txchyon Labs",
+    images: [
+      {
+        url: "/images/og-labs.jpg", // Ensure this exists or falls back
+        width: 1200,
+        height: 630,
+        alt: "Txchyon Labs Infrastructure",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Txchyon Labs | Advanced Trading Intelligence",
+    description: "Institutional-grade market intelligence and execution hub.",
+    images: ["/images/og-labs.jpg"],
+    creator: "@Txchyon",
+  },
 };
 
 export const viewport: Viewport = {
