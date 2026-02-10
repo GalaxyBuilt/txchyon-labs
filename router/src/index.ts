@@ -43,11 +43,8 @@ export default {
             return proxyRequest(request, env.ULTIMA_URL, '/labs/ultima');
         }
 
-        // 3. Route for Genesis (New)
+        // 3. Route for Genesis (Public - No Auth Required)
         if (path.startsWith('/labs/genesis')) {
-            const auth = await checkAuth(request, env);
-            if (!auth) return promptAuth();
-
             return proxyRequest(request, env.GENESIS_URL, '/labs/genesis');
         }
 
