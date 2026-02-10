@@ -34,7 +34,7 @@ export default function LabsPage() {
               <Hexagon className="w-6 h-6 text-gold animate-pulse" />
             </div>
             <div className="flex flex-col">
-              <span className="text-xl font-bold tracking-tighter text-platinum uppercase">Txchyon</span>
+              <span className="text-xl font-bold tracking-tighter text-platinum">Txchyon</span>
               <span className="text-[10px] font-mono tracking-[0.2em] text-gold/80 leading-none uppercase">Labs Infrastructure</span>
             </div>
           </div>
@@ -144,17 +144,17 @@ export default function LabsPage() {
           {/* Project Genesis */}
           <div className="group relative md:col-span-2 lg:col-span-2">
             <div className="absolute inset-0 bg-gold/5 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-            <div className="relative h-full bg-card/40 border border-border/50 rounded-2xl p-8 hover:border-gold/30 hover:bg-card/60 transition-all duration-300 backdrop-blur-sm cursor-not-allowed overflow-hidden border-l-2 border-l-gold/50 opacity-80">
+            <a href="/labs/genesis" className="relative block h-full bg-card/40 border border-border/50 rounded-2xl p-8 hover:border-gold/30 hover:bg-card/60 transition-all duration-300 backdrop-blur-sm cursor-pointer overflow-hidden border-l-2 border-l-gold/50">
               <div className="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity">
                 <Bitcoin className="w-32 h-32 text-gold rotate-12" />
               </div>
 
               <div className="flex items-start justify-between mb-8">
-                <div className="w-14 h-14 bg-gold/10 border border-gold/20 rounded-xl flex items-center justify-center">
+                <div className="w-14 h-14 bg-gold/10 border border-gold/20 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
                   <Bitcoin className="w-7 h-7 text-gold" />
                 </div>
-                <div className="px-3 py-1 bg-gold/5 border border-gold/20 rounded-md">
-                  <span className="text-[10px] font-mono text-gold/80 font-bold uppercase">Treasury Engine</span>
+                <div className="px-3 py-1 bg-blue-500/10 border border-blue-500/30 rounded-md">
+                  <span className="text-[10px] font-mono text-blue-400 font-bold uppercase">Demo Access</span>
                 </div>
               </div>
 
@@ -166,13 +166,13 @@ export default function LabsPage() {
               <div className="flex items-center justify-between pt-8 border-t border-border/50">
                 <div className="flex flex-col">
                   <span className="text-[10px] font-mono text-muted-foreground uppercase tracking-widest leading-none">Status</span>
-                  <span className="text-sm font-semibold text-gold animate-pulse">In Development</span>
+                  <span className="text-sm font-semibold text-platinum">Live Dashboard</span>
                 </div>
-                <div className="flex items-center gap-2 text-muted-foreground/50 font-mono text-sm cursor-not-allowed">
-                  ACCESS RESTRICTED <Lock className="w-3 h-3" />
+                <div className="flex items-center gap-2 text-gold font-mono text-sm group-hover:translate-x-1 transition-transform">
+                  LAUNCH MODULE <ArrowUpRight className="w-4 h-4" />
                 </div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
 
