@@ -10,6 +10,7 @@ OMEGA_URL = "https://omega-txchyon.pages.dev"
 ULTIMA_URL = "https://ultima-txchyon.pages.dev"
 CAPITAL_URL = "https://txchyon-capital.pages.dev"
 GENESIS_URL = "https://project-genesis-3bv.pages.dev"
+SHOP_URL = "https://txchyon-shop.pages.dev"
 
 # The routes where this worker should be active
 # In Cloudflare dashboard, you will point txchyon.com/* to this worker

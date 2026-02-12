@@ -212,8 +212,11 @@ export default function LabsPage() {
         </div>
 
         {/* Copyright */}
-        <div className="mt-20 text-center text-[10px] font-mono text-muted-foreground/30 uppercase tracking-[0.3em]">
-          Powered by Txchyon Labs Engine • All Rights Reserved
+        <div className="mt-20 text-center text-[10px] font-mono text-muted-foreground/30 uppercase tracking-[0.3em] flex flex-col gap-2">
+          <span>All Rights Reserved • Txchyon Labs Engine</span>
+          <span className="text-muted-foreground/50">
+            Powered By <a href="https://galaxybuilt.pages.dev" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors font-bold">GalaxyBuilt</a>
+          </span>
         </div>
       </div>
     </div>

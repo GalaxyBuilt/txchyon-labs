@@ -10,6 +10,7 @@ export interface Env {
     ULTIMA_URL: string;
     CAPITAL_URL: string;
     GENESIS_URL: string;
+    SHOP_URL: string;
 }
 
 export default {
@@ -54,7 +55,14 @@ export default {
             return proxyRequest(request, env.LABS_HUB_URL, '/labs');
         }
 
-        // 4. Default: Route everything else to the main Astro Megablog
+        // 4. Route for Shop
+        if (path.startsWith('/shop')) {
+            // No auth check here because the Shop app has its own Middleware auth
+            // Also, we do NOT strip the prefix because the Next.js app has basePath: '/shop'
+            return proxyRequest(request, env.SHOP_URL, '');
+        }
+
+        // 5. Default: Route everything else to the main Astro Megablog
         return fetch(new URL(path + url.search, env.MAIN_SITE_URL), request);
     },
 };
