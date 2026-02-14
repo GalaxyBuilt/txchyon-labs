@@ -31,7 +31,7 @@ export default function LabsPage() {
         <nav className="flex items-center justify-between mb-24">
           <div className="flex items-center gap-3 group cursor-pointer">
             <div className="w-10 h-10 overflow-hidden bg-gold/10 border border-gold/30 rounded-lg flex items-center justify-center group-hover:bg-gold/20 transition-all duration-300">
-              <img src="/logo.png" alt="Txchyon Logo" className="w-8 h-8 object-contain" />
+              <img src="https://txchyon.com/images/logo.png" alt="Txchyon Logo" className="w-full h-full object-cover" />
             </div>
             <div className="flex flex-col">
               <span className="text-xl font-bold tracking-tighter text-platinum">Txchyon</span>
