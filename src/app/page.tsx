@@ -30,7 +30,7 @@ export default function LabsPage() {
         {/* Navigation Header */}
         <nav className="flex items-center justify-between mb-24">
           <div className="flex items-center gap-3 group cursor-pointer">
-            <div className="w-10 h-10 overflow-hidden border border-gold/30 rounded-lg flex items-center justify-center group-hover:bg-gold/20 transition-all duration-300">
+            <div className="w-10 h-10 overflow-hidden bg-gold/10 border border-gold/30 rounded-lg flex items-center justify-center group-hover:bg-gold/20 transition-all duration-300">
               <img src="/logo.png" alt="Txchyon Logo" className="w-8 h-8 object-contain" />
             </div>
             <div className="flex flex-col">
