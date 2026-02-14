@@ -58,8 +58,8 @@ export default {
         // 4. Route for Shop
         if (path.startsWith('/shop')) {
             // No auth check here because the Shop app has its own Middleware auth
-            // Also, we do NOT strip the prefix because the Next.js app has basePath: '/shop'
-            return proxyRequest(request, env.SHOP_URL, '');
+            // Strip the prefix because the Next.js app is now at root of its origin domain
+            return proxyRequest(request, env.SHOP_URL, '/shop');
         }
 
         // 5. Default: Route everything else to the main Astro Megablog
